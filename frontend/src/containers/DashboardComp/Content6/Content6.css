@@ -1,0 +1,165 @@
+.con6 {
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas:
+        "c6Nav"
+        "watch"
+        "c6Btns";
+    background-color: #ffffff;
+    margin-right: 5%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(ar-segment-7-display.ttf);
+}
+
+@font-face {
+    font-family: customFont1;
+    src: url('../CSS-Fonts/Font1/ProtestStrike-Regular.ttf');
+}
+
+.watchDigits {
+    font-family: myFirstFont;
+    font-size: 50px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    color: black;
+}
+
+.miliDigits {
+    font-family: myFirstFont;
+    position: absolute;
+    left: 235px;
+    top: 33px;
+    font-size: 20px !important;
+}
+
+.span1 {
+    position: absolute;
+    left: 70px;
+    top: -10px;
+}
+
+.span2 {
+    position: absolute;
+    left: 150px;
+    top: -10px;
+}
+
+.watch {
+    grid-area: "watch";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c6Nav {
+    grid-area: "c6Nav";
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "stopWatch timer";
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.stopWatch {
+    grid-area: "stopWatch";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid rgb(0, 0, 0);
+}
+
+.timer {
+    grid-area: "timer";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c6Btns {
+    grid-area: "c6Btns";
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.c6Btns button {
+    background-color: #FF8E6D;
+    border-radius: 15px;
+}
+
+.navBtn {
+    background: none;
+    border: none;
+    font-family: customFont1;
+    font-size: 25px;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.navBtn:focus{
+    outline: none;
+} 
+
+.timer1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "dig1 dig2 dig3";
+}
+
+.dig1 {
+    grid-area: "dig1";
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 35px;
+}
+
+.dig2 {
+    grid-area: "dig2";
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 17.5px;
+    padding-right: 17.5px;
+}
+
+.dig3 {
+    grid-area: "dig3";
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-right: 35px;
+}
+
+.timerC6Ip1 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    color: black;
+    background-color: #ffffff;
+}
+
+.c6Ip1 {
+    background-color: #F0F0F0;
+}
+
+.span12 {
+    position: absolute;
+    top: -10px;
+    left: -20px;
+}
+
+.span22 {
+    position: absolute;
+    top: -10px;
+}

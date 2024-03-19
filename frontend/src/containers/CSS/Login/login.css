@@ -1,0 +1,182 @@
+.loginPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: customFont1;
+    src: url('../../DashboardComp/CSS-Fonts/Font1/ProtestStrike-Regular.ttf');
+}
+
+.loginContainer {
+    margin-top: 2%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-areas:
+        "loginContent";
+    height: 75vh;
+    border-radius: 12px;
+}
+
+.loginContent {
+    justify-self: center;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 100px 230px 30px 100px 50px 50px;
+    grid-template-areas:
+        "loginHead"
+        "loginIp"
+        "loginMid"
+        "loginLink3"
+        "loginLink1"
+        "loginLink2"
+    ;
+    backdrop-filter: blur(20px) saturate(200%);
+    border-radius: 12px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.loginHead {
+    display: grid;
+    justify-content: center;
+    align-items: end;
+}
+
+.headTxt1 {
+    font-family: customFont1;
+    letter-spacing: 3px;
+    font-size: 45px;
+    color: #2c2c2c;
+}
+
+.headTxt2 {
+    font-family: customFont1;
+    letter-spacing: 3px;
+    color: rgb(82, 82, 82);
+}
+
+.loginIp1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.loginIp2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.loginEmail::placeholder,
+.loginPass::placeholder {
+    color: rgb(0, 0, 0);
+    font-family: customFont1;
+}
+
+.loginEmail {
+    width: 50%;
+    height: 50px;
+    border: solid 2px #f75c2374;
+    border-radius: 10px;
+    background: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-family: customFont1;
+}
+
+
+.loginPass {
+    width: 50%;
+    height: 50px;
+    border: solid 2px #f75c238b;
+    border-radius: 10px;
+    background: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-family: customFont1;
+}
+
+.loginBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginBtn1 {
+    width: 20%;
+    height: 35px;
+    border: solid 2px #f75c2374;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-family: customFont1;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.loginBtn1:hover, .loginBtn3:hover {
+    text-decoration: none;
+    color: #f68f28;
+}
+
+.loginLink1,
+.loginLink2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.loginMid {
+    display: flex;
+    align-self: flex-start;
+    justify-self: center;
+    font-family: customFont1;
+    letter-spacing: 2px;
+}
+
+.loginLink3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+    margin-top: 4%;
+}
+
+.loginBtn2 {
+    text-decoration: none;
+    color: #f68f28;
+    font-family: customFont1;
+    letter-spacing: 2px;
+}
+
+.loginBtn2:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+.loginSubs {
+    font-family: customFont1;
+    font-weight: 100;
+    margin: 0 1%;
+}
+
+.loginBtn3 {
+    width: 45%;
+    height: 45px;
+    border: solid 2px #f75c2374;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-family: customFont1;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    background: url("../../Images/google.png") no-repeat center center;
+    background-size: contain;
+    background-position: 5%;
+    padding-left: 5%;
+}
